@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Google tests]">
+  <test name="Login tests(failed)">
+    <classes>
+      <class name="com.exadel.automation.ApiTest">
+        <methods>
+          <include name="addTestRailResult"/>
+          <include name="validateWrongWeatherResponse"/>
+          <include name="initTestSuite"/>
+          <include name="tearDown"/>
+          <include name="initWebDriver"/>
+        </methods>
+      </class> <!-- com.exadel.automation.ApiTest -->
+      <class name="com.exadel.automation.GmailLoginTest">
+        <methods>
+          <include name="addTestRailResult"/>
+          <include name="testNonexistentUsernameLogin"/>
+          <include name="testForgotEmail"/>
+          <include name="testIncorrectPasswordLogin"/>
+          <include name="initTestSuite"/>
+          <include name="tearDown"/>
+          <include name="initWebDriver"/>
+          <include name="testBroken"/>
+          <include name="testSuccessfulLogin"/>
+        </methods>
+      </class> <!-- com.exadel.automation.GmailLoginTest -->
+    </classes>
+  </test> <!-- Login tests(failed) -->
+</suite> <!-- Failed suite [Google tests] -->
